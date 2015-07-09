@@ -1,0 +1,68 @@
+@import "../_colors";
+
+.user-status-manager{
+  height: 100%;
+
+  > *{
+	width: 50%;
+	height: 100%;
+	position: relative;
+
+	> h3{
+	  text-align: center;
+	  border-bottom: 1px solid $separator-color;
+	}
+  }
+
+  li, button, input{
+	margin: 3px;
+  }
+
+  > :nth-child(1){
+	float: left;
+  }
+
+  > :nth-child(2){
+	float: right;
+  }
+}
+
+.user-status-manager-item-selected {
+  background-color: $primary-color-light;
+  color: $text-color-invert;
+}
+
+.user-status-manager-item {
+  position: relative;
+
+  > :nth-child(2) > i{
+	color: $text-color-invert;
+  }
+
+  > :nth-child(2) > i:hover{
+	cursor: pointer;
+	color: $primary-color;
+  }
+
+  > :nth-child(2){
+	position: absolute;
+	right: 0;
+
+	*{
+	  margin-right: 5px;
+	}
+
+	/*> :nth-child(1){
+	  color: $success-color;
+	}
+
+	> :nth-child(2){
+	  color: $danger-color;
+	}*/
+  }
+}
+
+.user-status-manager-item:hover{
+  cursor: pointer;
+  color: $primary-color;
+}

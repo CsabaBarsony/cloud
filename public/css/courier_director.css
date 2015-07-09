@@ -1,0 +1,151 @@
+#cd-main{
+	width: 100%;
+	height: 100%;
+}
+
+#cd-list{
+	position: relative;
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+
+#cd-list-main{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 1px;
+}
+
+#cd-list-border{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	right: 0;
+	background-color: #ddd;
+}
+
+.cd-list-item{
+	position: relative;
+	height: 40px;
+	border-bottom: 1px solid #ddd;
+}
+
+.cd-list-item-first{
+	background-color: rgb(224, 247, 250);
+}
+
+.cd-list-item-avatar{
+	position: absolute;
+	right: 30px;
+	left: 0;
+}
+
+.cd-list-item-icons{
+	position: absolute;
+	width: 30px;
+	height: 100%;
+	right: 0;
+	background-color: #d8ffd7;
+}
+
+.cd-list-item-alert{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+
+}
+
+#cd-tasks{
+	position: relative;
+	height: 100%;
+	width: 50%;
+	float: right;
+	overflow-y: auto;
+}
+
+
+
+.cd-task-item-id{
+	width: 50%;
+	height: 12px;
+	float: left;
+	font-size: 0.7em;
+}
+
+.cd-task-item-status{
+	width: 50%;
+	height: 12px;
+	float: right;
+	font-size: 0.7em;
+	text-align: right;
+}
+
+.cd-task-item-description{
+	width: 100%;
+	height: 19px;
+	padding: 5px 0 3px 0;
+	overflow: hidden;
+}
+
+.cd-task-item-address{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.cd-task-item-date{
+	width: 50%;
+	height: 100%;
+	float: right;
+	text-align: right;
+}
+
+.cd-task-item-bottom{
+	width: 100%;
+	height: 12px;
+	font-size: 0.7em;
+}
+
+/*.cd-task-item-status-text{
+	border-radius: 4px;
+	color: #fff;
+	padding: 0 3px;
+}*/
+
+
+
+.cd-task-item{
+	position: relative;
+	border-bottom: 1px solid #ddd;
+	height: 58px;
+}
+
+.cd-task-item-content{
+	position: absolute;
+	left: 3px;
+	right: 0;
+	height: 100%;
+	padding: 3px;
+}
+
+.cd-task-item-status-stripe{
+	position: absolute;
+	height: 100%;
+	width: 2px;
+	left: 0;
+}
+
+.cd-task-item-status-stripe-new{
+	background-color: #2196F3;
+}
+
+.cd-task-item-status-stripe-success{
+	background-color: #4CAF50;
+}
+
+.cd-task-item-status-stripe-fail{
+	background-color: #F44336;
+}

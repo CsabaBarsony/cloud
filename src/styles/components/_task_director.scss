@@ -1,0 +1,122 @@
+@import "../_colors";
+
+.task-operations{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 5px;
+}
+
+.task-list{
+  position: absolute;
+  overflow-y: auto;
+  top: 30px;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  margin: 5px;
+
+  > :nth-child(2){
+	text-align: center;
+	margin: 20px 0;
+
+	span{
+	  background-color: $primary-color-lighter;
+	  color: $primary-color;
+	  padding: 5px;
+	  margin-right: 5px;
+	  cursor: pointer;
+	}
+
+	.task-list-pagination-selected, span:hover{
+	  background-color: $primary-color;
+	  color: $text-color-light;
+	}
+
+	.task-list-pagination-selected{
+	  cursor: auto;
+	}
+  }
+}
+
+.task-list ul li:last-child{
+  border-bottom: 0;
+}
+
+.task-list-element{
+  border-bottom: 1px solid $separator-color;
+  display: table;
+  width: 100%;
+
+  > :nth-child(1){
+	width: 5px;
+  }
+
+  > :nth-child(2){
+	width: 150px;
+	padding-left: 2px;
+  }
+
+  > :nth-child(3){
+	position: relative;
+
+	> :nth-child(1){
+	  > :nth-child(3){
+		position: absolute;
+		right: 0;
+	  }
+	}
+
+	> :nth-child(2){
+	  position: relative;
+	  padding: 5px 0 16px 0;
+	}
+
+	> :nth-child(4){
+	  right: 0;
+	}
+
+	> :nth-child(4):hover{
+	  opacity: 0.5;
+	  cursor: pointer;
+	}
+  }
+
+  > :nth-child(4){
+	position: relative;
+	width: 22px;
+
+	input{
+	  position: absolute;
+	  top: 45%;
+	  transform: translateY(-45%);
+	}
+  }
+}
+
+.task-list-element > *{
+  display: table-cell;
+}
+
+.task-list-element-description-closed{
+  height: 19px;
+
+  > :nth-child(1){
+	position: absolute;
+	right: 0;
+	left: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  }
+}
+
+.task-list-element-text-cell{
+  padding: 2px 0;
+}
+
+.task-list-element-text-cell-bottom{
+  position: absolute;
+  bottom: 2px;
+}

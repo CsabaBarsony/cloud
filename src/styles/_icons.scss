@@ -1,0 +1,69 @@
+.cr-icon-task-address{
+  @extend .fa;
+  @extend .fa-map-marker;
+}
+
+.cr-icon-task-description{
+  @extend .fa;
+  @extend .fa-edit;
+}
+
+.cr-icon-task-date{
+  @extend .fa;
+  @extend .fa-clock-o;
+}
+
+.cr-icon-toggle-down{
+  @extend .fa;
+  @extend .fa-chevron-down;
+}
+
+.cr-icon-toggle-up{
+  @extend .fa;
+  @extend .fa-chevron-up;
+}
+
+.cr-icon-add {
+  @extend .fa;
+  @extend .fa-plus;
+}
+
+.cr-icon-edit {
+  @extend .fa;
+  @extend .fa-edit;
+}
+
+.cr-icon-remove {
+  @extend .fa;
+  @extend .fa-remove;
+}
+
+.cr-icon-color-picker{
+  @extend .fa;
+  @extend .fa-eyedropper;
+}
+
+.cr-icon-move-up{
+  @extend .fa;
+  @extend .fa-arrow-up;
+}
+
+.cr-icon-move-down{
+  @extend .fa;
+  @extend .fa-arrow-down;
+}
+
+.cr-icon-comment{
+  @extend .fa;
+  @extend .fa-comment-o;
+}
+
+.cr-icon-comments{
+  @extend .fa;
+  @extend .fa-comments-o;
+}
+
+.cr-icon-clock{
+  @extend .fa;
+  @extend .fa-clock-o;
+}

@@ -1,0 +1,28 @@
+.courier-avatar{
+  position: relative;
+  height: 30px;
+  padding: 5px;
+
+  > img{
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+  }
+
+  > :nth-child(2){
+	position: absolute;
+	top: 50%;
+	left: 43px;
+	transform: translateY(-50%);
+	max-height: 100%;
+	overflow: hidden;
+  }
+}
+
+.courier-avatar-name-offline{
+  color: $neutral-color-dark;
+}
+
+.courier-avatar-name-small{
+  font-size: 0.8em;
+}
